@@ -1,0 +1,39 @@
+﻿version: '3.3'
+services:
+  #Starting the database
+  db:
+    image: vandersonassis/urlshortenerdb:v5
+    container_name: urlshortenerdb
+    networks:
+      - shortener-network
+    ports:
+      - 3307:3306
+
+  #Starting the restFul api
+  shortenerapi:
+    image: vandersonassis/urlshortenerapi:v1
+    container_name: urlshortenerapi
+    networks:
+      shortener-network:
+        ipv4_address: "172.21.0.4"    
+    depends_on:
+      - "db"
+
+  #Starting the client that will consume the api above
+  webapp:
+    image: vandersonassis/urlshortenerclient:v1
+    container_name: urlshortenerclient
+    networks:
+      - shortener-network
+    ports:
+      - "15000:8080"      
+    depends_on:
+      - "shortenerapi"
+      
+  #Setting up the network
+networks:
+  shortener-network:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.21.0.0/16        
