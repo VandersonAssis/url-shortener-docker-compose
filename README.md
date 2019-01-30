@@ -7,7 +7,7 @@ This repository has the docker compose yml file that's used to deploy the URL Sh
 
 Please wait until the database container is up, it takes a little while. After it is up, access the application on this url http://localhost:15000/shortener.
 
-# Deploy it manually (YOU'LL GET HURT)
+# Deploy it manually (YOU'LL GONNA GET HURT)
 Of course, to run the application using the above method, you'll have to have Docker installed in your machine, but if you don't have it or don't want it, then just follow the following steps.
 
 - Have tomcat 8.5, java8 and mysql8 installed on your PC.
