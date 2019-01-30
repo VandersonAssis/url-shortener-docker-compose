@@ -18,6 +18,3 @@ Of course, to run the application using the above method, you'll have to have Do
 - In the api project, you'll also see the shortener-api.jar. Just double click it and the api will be up to go.
 
 For info on how to use this application, please follow this link https://github.com/VandersonAssis/url-shortener-client.
-
-# COMING UP NEXT
-- Implement a way for the application to aknowledge when the database is up, and only then let the user navigate and use it. But for now, please wait until the database is up to use the application. It takes around one or two minutes.
