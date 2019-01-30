@@ -17,6 +17,9 @@ Of course, to run the application using the above method, you'll have to have Do
 - Execute the api's database_initialization.sql file on your mysql8 engine.
 - In the api project, you'll also see the shortener-api.jar. Just double click it and the api will be up to go.
 
+# Coming up next...
+- Secure the api using OAuth2.0
+
 For info on how to use this application, please follow this link https://github.com/VandersonAssis/url-shortener-client.
 
 My DockerHub page is https://hub.docker.com/u/vandersonassis.
