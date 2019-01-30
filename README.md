@@ -1,4 +1,4 @@
-# URL SHORTENER DOCKER COMPOSE
+# Deploy it using docker
 This repository has the docker compose yml file that's used to deploy the URL Shortener web application on your machine. Please follow the below steps to use it:
 
 - Clone this repository to your PC.
@@ -7,7 +7,17 @@ This repository has the docker compose yml file that's used to deploy the URL Sh
 
 Please wait until the database container is up, it takes a little while. After it is up, access the application on this url http://localhost:15000/shortener.
 
-For the how-to on this application, please follow this link https://github.com/VandersonAssis/url-shortener-client.
+# Deploy it manually
+Of course, to run the application using the above method, you'll have to have Docker installed in your machine, but if you don't have it or don't want it, then just follow the following steps.
+
+- Have tomcat 8.5, java8 and mysql8 installed on your PC.
+- Clone the api project https://github.com/VandersonAssis/url-shortener-api.
+- Clone the client project https://github.com/VandersonAssis/url-shortener-client.
+- In the client project, you'll see a file called shortener.war, just copy it into your tomcat's webapps directory and then start it.
+- Execute the api's database_initialization.sql file on your mysql8 engine.
+- In the api project, you'll also see the shortener-api.jar. Just double click it and the api will be up to go.
+
+For info on how to use this application, please follow this link https://github.com/VandersonAssis/url-shortener-client.
 
 # COMING UP NEXT
-- Implement a way for the application to aknowledge when the database is up, and only then let the user navigate and use it. But for now, please wait until the database is up to use the application. It takes around one to two minutes.
+- Implement a way for the application to aknowledge when the database is up, and only then let the user navigate and use it. But for now, please wait until the database is up to use the application. It takes around one or two minutes.
