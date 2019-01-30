@@ -18,3 +18,5 @@ Of course, to run the application using the above method, you'll have to have Do
 - In the api project, you'll also see the shortener-api.jar. Just double click it and the api will be up to go.
 
 For info on how to use this application, please follow this link https://github.com/VandersonAssis/url-shortener-client.
+
+My DockerHub page is https://hub.docker.com/u/vandersonassis.
