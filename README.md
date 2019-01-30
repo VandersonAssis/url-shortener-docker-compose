@@ -3,7 +3,7 @@ This repository has the docker compose yml file that's used to deploy the URL Sh
 
 - Clone this repository to your PC.
 - Open the command line tool and navigate into the directory of the docker-compose.yml.
-- Run docker-compose up command.
+- Run "docker-compose up" command.
 
 Please wait until the database container is up, it takes a little while. After it is up, access the application on this url http://localhost:15000/shortener.
 
