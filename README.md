@@ -1,4 +1,4 @@
-# Deploy it using docker
+# Deploy it using docker (EASIER)
 This repository has the docker compose yml file that's used to deploy the URL Shortener web application on your machine. Please follow the below steps to use it:
 
 - Clone this repository to your PC.
@@ -7,7 +7,7 @@ This repository has the docker compose yml file that's used to deploy the URL Sh
 
 Please wait until the database container is up, it takes a little while. After it is up, access the application on this url http://localhost:15000/shortener.
 
-# Deploy it manually
+# Deploy it manually (YOU'LL GET HURT)
 Of course, to run the application using the above method, you'll have to have Docker installed in your machine, but if you don't have it or don't want it, then just follow the following steps.
 
 - Have tomcat 8.5, java8 and mysql8 installed on your PC.
