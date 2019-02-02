@@ -7,7 +7,7 @@ services:
     networks:
       - shortener-network
     ports:
-      - 3307:3306
+      - "3307:3306"
 
   #Starting the restFul api
   shortenerapi:
@@ -15,7 +15,10 @@ services:
     container_name: urlshortenerapi
     networks:
       shortener-network:
-        ipv4_address: "172.21.0.4"    
+        aliases:
+          - api        
+    ports:
+      - "8080:8080"
     depends_on:
       - "db"
 
@@ -34,6 +37,3 @@ services:
 networks:
   shortener-network:
     driver: bridge
-    ipam:
-      config:
-        - subnet: 172.21.0.0/16        
