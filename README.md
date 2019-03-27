@@ -1,5 +1,5 @@
 # Deploy it using docker (EASIER)
-This repository has the docker compose yml file that's used to deploy the URL Shortener web application on your server. Please follow the below steps to use it:
+This repository has the docker compose yml file that's used to deploy the URL Shortener web application and backend api on your server. Please follow the below steps to use it:
 
 - Clone this repository to your PC.
 - Open the command line tool and navigate into the directory of the docker-compose.yml.
